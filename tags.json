@@ -3,6 +3,11 @@
     "sample_project": {
       "color": "#d66b9b"
     },
+    "duplicated": {
+      "color": "#3A85AD"
+    },
+    "mlops": {},
+    "workflow": {},
     "SAMPLE_PROJECT": {
       "color": "#1ac2ab"
     },
@@ -12,11 +17,9 @@
     "creator:admin": {
       "color": "#28aadd"
     },
+    "validation": {},
     "creator_admin": {
       "color": "#1ac2ab"
-    },
-    "mlops": {},
-    "validation": {},
-    "workflow": {}
+    }
   }
 }

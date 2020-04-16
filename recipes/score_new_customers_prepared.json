@@ -16,7 +16,7 @@
     "main": {
       "items": [
         {
-          "ref": "new_customers_prepared_db",
+          "ref": "new_customers_prepared",
           "deps": []
         }
       ]
@@ -34,18 +34,18 @@
     "main": {
       "items": [
         {
-          "ref": "new_customers_scored_db",
+          "ref": "new_customers_scored",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587005067556
+    "lastModifiedOn": 1587009204640
   },
   "tags": [],
   "customFields": {},

@@ -21,6 +21,9 @@
             },
             "crm_last_year_joined": {
               "repartition": 10
+            },
+            "crm_last_year_db": {
+              "repartition": 10
             }
           }
         },
@@ -70,11 +73,11 @@
     "scriptDeps": {
       "items": [
         {
-          "ref": "web_last_year",
+          "ref": "web_last_year_db",
           "deps": []
         },
         {
-          "ref": "country_gdp",
+          "ref": "country_gdp_db",
           "deps": []
         }
       ]
@@ -91,11 +94,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 9,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587003796124
+    "lastModifiedOn": 1587003835086
   },
   "tags": [],
   "customFields": {},

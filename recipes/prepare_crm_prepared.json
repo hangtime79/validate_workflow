@@ -24,6 +24,12 @@
             },
             "crm_last_year_db": {
               "repartition": 10
+            },
+            "web_last_year_db": {
+              "repartition": 10
+            },
+            "country_gdp_db": {
+              "repartition": 10
             }
           }
         },
@@ -87,18 +93,18 @@
     "main": {
       "items": [
         {
-          "ref": "crm_prepared",
+          "ref": "crm_prepared_db",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587003835086
+    "lastModifiedOn": 1587004786657
   },
   "tags": [],
   "customFields": {},

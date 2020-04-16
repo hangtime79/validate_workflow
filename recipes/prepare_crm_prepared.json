@@ -93,18 +93,18 @@
     "main": {
       "items": [
         {
-          "ref": "crm_prepared_db",
+          "ref": "crm_prepared",
           "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 12,
+    "versionNumber": 13,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587004792587
+    "lastModifiedOn": 1587009157358
   },
   "tags": [],
   "customFields": {},

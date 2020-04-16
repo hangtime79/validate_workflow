@@ -32,50 +32,59 @@
   "steps": [
     {
       "preview": false,
-      "metaType": "PROCESSOR",
+      "name": "New Group",
+      "metaType": "GROUP",
       "disabled": false,
-      "type": "DateParser",
-      "params": {
-        "outCol": "birth_parsed",
-        "formats": [
-          "MM/dd/yyyy"
-        ],
-        "columns": [
-          "birth"
-        ],
-        "timezone_id": "UTC",
-        "appliesTo": "SINGLE_COLUMN",
-        "lang": "auto"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "DateDifference",
-      "params": {
-        "output": "since_birth_parsed_days",
-        "outputUnit": "YEARS",
-        "input1": "birth_parsed",
-        "compareTo": "NOW",
-        "reverse": false
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnRenamer",
-      "params": {
-        "renamings": [
-          {
-            "from": "since_birth_parsed_days",
-            "to": "age"
-          }
-        ]
-      },
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
+          "params": {
+            "outCol": "birth_parsed",
+            "formats": [
+              "MM/dd/yyyy"
+            ],
+            "columns": [
+              "birth"
+            ],
+            "timezone_id": "UTC",
+            "appliesTo": "SINGLE_COLUMN",
+            "lang": "auto"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateDifference",
+          "params": {
+            "output": "since_birth_parsed_days",
+            "outputUnit": "YEARS",
+            "input1": "birth_parsed",
+            "compareTo": "NOW",
+            "reverse": false
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnRenamer",
+          "params": {
+            "renamings": [
+              {
+                "from": "since_birth_parsed_days",
+                "to": "age"
+              }
+            ]
+          },
+          "alwaysShowComment": false
+        }
+      ],
       "alwaysShowComment": false
     },
     {

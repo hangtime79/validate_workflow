@@ -28,16 +28,16 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "FULL",
       "maxRecords": 100000,
       "targetRatio": 0.02,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
     "ssdTrainingRatio": 0.8,
-    "ssdSeed": 1337,
+    "ssdSeed": 5656,
     "testOnLargerValues": true,
-    "kfold": false,
+    "kfold": true,
     "nFolds": 5,
     "instanceIdRefresher": 0,
     "subSamplingSeed": 1337
@@ -166,7 +166,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -557,17 +557,22 @@
       }
     },
     "decision_tree_regression": {
-      "enabled": false,
+      "enabled": true,
       "max_depth": {
         "values": [
-          5
+          5,
+          10,
+          20
         ],
         "nValues": 0,
         "gridMode": "EXPLICIT"
       },
       "min_samples_leaf": {
         "values": [
-          1
+          1,
+          10,
+          15,
+          50
         ],
         "nValues": 0,
         "gridMode": "EXPLICIT"
@@ -617,7 +622,7 @@
         "nValues": 0,
         "gridMode": "EXPLICIT"
       },
-      "enabled": false
+      "enabled": true
     },
     "leastsquare_regression": {
       "enabled": false,
@@ -872,8 +877,7 @@
           0.01,
           0.05,
           0.1,
-          0.3,
-          0.5
+          0.3
         ],
         "nValues": 0,
         "gridMode": "EXPLICIT"
@@ -902,7 +906,7 @@
       "subsample": {
         "values": [
           0.75,
-          1.0
+          0.9
         ],
         "nValues": 0,
         "gridMode": "EXPLICIT"
@@ -910,7 +914,7 @@
       "colsample_bytree": {
         "values": [
           0.75,
-          1.0
+          0.9
         ],
         "nValues": 0,
         "gridMode": "EXPLICIT"
@@ -1218,7 +1222,7 @@
       "nJobs": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "RMSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {

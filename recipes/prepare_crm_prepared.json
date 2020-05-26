@@ -82,11 +82,11 @@
     "scriptDeps": {
       "items": [
         {
-          "ref": "web_last_year_db",
+          "ref": "FEATURESTORE.web_last_year_db",
           "deps": []
         },
         {
-          "ref": "country_gdp_db",
+          "ref": "FEATURESTORE.country_gdp_db",
           "deps": []
         }
       ]
@@ -103,11 +103,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 18,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590499781564
+    "lastModifiedOn": 1590499911306
   },
   "tags": [],
   "customFields": {},

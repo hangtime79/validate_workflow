@@ -722,7 +722,7 @@
         "nValues": 0,
         "gridMode": "EXPLICIT"
       },
-      "enabled": false
+      "enabled": true
     },
     "leastsquare_regression": {
       "enabled": false,

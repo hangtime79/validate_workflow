@@ -27,6 +27,9 @@
             },
             "country_gdp_db": {
               "repartition": 10
+            },
+            "FEATURESTORE.new_customers_db": {
+              "repartition": 10
             }
           }
         },
@@ -76,11 +79,11 @@
     "scriptDeps": {
       "items": [
         {
-          "ref": "web_new_visitors_db",
+          "ref": "FEATURESTORE.web_new_visitors_db",
           "deps": []
         },
         {
-          "ref": "country_gdp_db",
+          "ref": "FEATURESTORE.country_gdp_db",
           "deps": []
         }
       ]
@@ -97,11 +100,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590499941816
+    "lastModifiedOn": 1590499989076
   },
   "tags": [],
   "customFields": {},

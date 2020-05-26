@@ -114,7 +114,7 @@
         "maxLevenshtein": 1,
         "clearStopWords": false,
         "fuzzy": false,
-        "rightInput": "web_new_visitors_db",
+        "rightInput": "FEATURESTORE.web_new_visitors_db",
         "stem": false
       },
       "alwaysShowComment": false
@@ -159,7 +159,7 @@
         "maxLevenshtein": 1,
         "clearStopWords": false,
         "fuzzy": true,
-        "rightInput": "country_gdp_db",
+        "rightInput": "FEATURESTORE.country_gdp_db",
         "stem": false
       },
       "alwaysShowComment": false

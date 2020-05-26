@@ -30,6 +30,9 @@
             },
             "country_gdp_db": {
               "repartition": 10
+            },
+            "FEATURESTORE.crm_last_year_db": {
+              "repartition": 10
             }
           }
         },
@@ -100,11 +103,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590499773284
+    "lastModifiedOn": 1590499781564
   },
   "tags": [],
   "customFields": {},

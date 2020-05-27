@@ -6,8 +6,12 @@
     "duplicated": {
       "color": "#3A85AD"
     },
-    "mlops": {},
-    "workflow": {},
+    "mlops": {
+      "color": "#de1ea5"
+    },
+    "workflow": {
+      "color": "#de1ea5"
+    },
     "SAMPLE_PROJECT": {
       "color": "#1ac2ab"
     },
@@ -17,7 +21,9 @@
     "creator:admin": {
       "color": "#28aadd"
     },
-    "validation": {},
+    "validation": {
+      "color": "#94be8e"
+    },
     "creator_admin": {
       "color": "#1ac2ab"
     }

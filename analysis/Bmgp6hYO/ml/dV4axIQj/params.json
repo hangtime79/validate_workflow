@@ -34,10 +34,10 @@
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
     },
-    "ssdTrainingRatio": 0.8,
+    "ssdTrainingRatio": 0.7,
     "ssdSeed": 5656,
     "testOnLargerValues": true,
-    "kfold": true,
+    "kfold": false,
     "nFolds": 5,
     "instanceIdRefresher": 1,
     "subSamplingSeed": 1337

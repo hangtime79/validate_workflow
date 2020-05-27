@@ -23,16 +23,20 @@
         {
           "ref": "crm_train",
           "appendMode": false
+        },
+        {
+          "ref": "crm_test",
+          "appendMode": false
         }
       ]
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590557253962
+    "lastModifiedOn": 1590557277905
   },
   "creationTag": {
     "versionNumber": 0,

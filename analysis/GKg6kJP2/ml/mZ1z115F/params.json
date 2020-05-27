@@ -13,7 +13,7 @@
   },
   "guessPolicy": "PERFORMANCE",
   "splitParams": {
-    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ttPolicy": "EXPLICIT_FILTERING_TWO_DATASETS",
     "ssdSplitMode": "RANDOM",
     "splitBeforePrepare": true,
     "ssdSelection": {
@@ -37,6 +37,48 @@
     "ssdTrainingRatio": 0.8,
     "ssdSeed": 1337,
     "testOnLargerValues": true,
+    "eftdTrain": {
+      "datasetSmartName": "crm_train",
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
+    "eftdTest": {
+      "datasetSmartName": "crm_test",
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
     "kfold": false,
     "nFolds": 5,
     "instanceIdRefresher": 0,
@@ -166,7 +208,7 @@
         "max_nb_categories": 100,
         "max_cat_safety": 200,
         "dummy_drop": "AUTO",
-        "role": "INPUT",
+        "role": "REJECT",
         "type": "CATEGORY",
         "state": {
           "userModified": false,
@@ -617,14 +659,14 @@
         "nValues": 0,
         "gridMode": "EXPLICIT"
       },
-      "enabled": false
+      "enabled": true
     },
     "leastsquare_regression": {
       "enabled": false,
       "n_jobs": 2
     },
     "sgd_regression": {
-      "enabled": false,
+      "enabled": true,
       "loss": {
         "values": {
           "huber": {
@@ -1218,7 +1260,7 @@
       "nJobs": 4
     },
     "metrics": {
-      "evaluationMetric": "R2",
+      "evaluationMetric": "RMSE",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {

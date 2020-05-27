@@ -3,7 +3,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "CLV-Regression",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1590557725452",
   "conditionalOutputs": [],
   "partitioning": {
     "ignoreNonMatchingFile": false,
@@ -15,7 +15,7 @@
     "rebuildBehavior": "NORMAL",
     "crossProjectBuildBehavior": "DEFAULT"
   },
-  "lastExportedFrom": "A-DKU_CUSTOMER_LIFETIME_VALUE-Bmgp6hYO-dV4axIQj-s1-pp4-m1",
+  "lastExportedFrom": "A-DKU_CUSTOMER_LIFETIME_VALUE-Bmgp6hYO-dV4axIQj-s3-pp1-m1",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -1000,7 +1000,7 @@
     "backendType": "PY_MEMORY",
     "maxConcurrentModelTraining": 2,
     "envSelection": {
-      "envMode": "USE_BUILTIN_MODE"
+      "envMode": "INHERIT"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -1087,11 +1087,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590555591515
+    "lastModifiedOn": 1590557725590
   },
   "creationTag": {
     "versionNumber": 0,
